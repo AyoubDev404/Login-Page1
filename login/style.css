@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(Fredoka.ttf);
+}
+
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    position: relative;
+    width: 400px;
+    height: 480px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(114, 185, 224, 0.85) 0%, rgba(44, 118, 178, 0.9) 50%, rgba(16, 65, 130, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(109, 200, 237, 0.4);                     
+}
+
+#profile {
+    position: absolute;
+    left: 170px;
+    top: 15px;
+    width: 50px;
+    max-width: 100%;
+}
+
+#main_title {
+    font-family: "Fredoka";
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 65px;
+    padding-left: 23px;
+}
+
+
+
+#input_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 8px;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+}
+
+#email_title {
+    font-family: "Fredoka";
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+
+#email_div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(18, 52, 86, 0.35);
+    padding: 0 16px;
+    width: 310px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#email_div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-family: "Fredoka";
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#email_div input::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1;
+}
+
+#email_div img {
+    width: 25px;
+    max-width: 100%;
+}
+
+
+#password_title {
+    font-family: "Fredoka";
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+
+#password_div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(18, 52, 86, 0.35);
+    padding: 0 16px;
+    width: 310px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#password_div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-family: "Fredoka";
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#password_div input::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1;
+}
+
+#password_div img {
+    width: 25px;
+    max-width: 100%;
+}
+
+#password_div button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+#check_div {
+    position: absolute;
+    left: 40px;
+    top: 275px;
+    display: flex;
+    gap: 5px;
+    font-family: "Fredoka";
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+
+#check_div input {
+    width: 15px;
+}
+
+#check_div a {
+    text-decoration: underline;
+    font-family: "Fredoka";
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    margin-left: 43px;
+}
+
+
+#login_btn {
+    background: linear-gradient(90deg, #6dc8ed 0%, #379fd6 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(109, 200, 237, 0.4);
+    transition: all 0.25s ease;
+    width: 350px;
+    height: 40px;
+
+    position: absolute;
+    left: 22px;
+    top: 310px;
+
+    font-family: "Fredoka";
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    cursor: pointer;
+}
+
+#login_btn:hover{
+    background: linear-gradient(90deg, #7ed4f7 0%, #45aee6 100%);
+    box-shadow: 0 0 20px rgba(109, 200, 237, 0.85), 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+#login_btn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#divider {
+    position: absolute;
+    left: 0;
+    top: 360px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Fredoka";
+    gap: 12px;
+}
+
+#divider::before,
+#divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+
+#buttons {
+    position: absolute;
+    left: 40px;
+    top: 405px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#buttons button {
+    background: white;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(55, 159, 214, 0.4);
+    width: 95px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background: linear-gradient(90deg, #7ed4f7 0%, #45aee6 100%);
+    box-shadow: 0 0 20px rgba(109, 200, 237, 0.85), 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+#buttons button:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn_content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn_content button img {
+    width: 25px;
+}
